@@ -2,6 +2,6 @@ django
 dj_database_url
 pathlib
 djangorestframework
-django_filters
+django-filter
 django-cors-headers
 python-dotenv
