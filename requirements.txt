@@ -1,0 +1,5 @@
+django
+dj_database_url
+pathlib
+rest_framework
+django_filters
