@@ -75,11 +75,10 @@ WSGI_APPLICATION = "ZomatoBackend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 import dj_database_url
-
+import os
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://zomatodb_efux_user:hxOBYjEqU4UxtxsDCddlhFKqIGHSFkm4@dpg-cqe89vggph6c73ajkesg-a.oregon-postgres.render.com/zomatodb_efux',
-        conn_max_age=600
+        default= os.getenv('Database_URL')
     )
 }
 
